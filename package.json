@@ -1,6 +1,6 @@
 {
   "name": "apigee-baas-data-import",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "This Node.js tool is meant to ease import of data to Apigee BaaS",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/dzuluaga/apigee-baas-data-import.git"
   },
   "keywords": [
-    "apigee"
+    "apigee", "baas", "usergrid"
   ],
   "author": "Diego Zuluaga",
   "license": "MIT",
@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/dzuluaga/apigee-baas-data-import",
   "dependencies": {
-    "commander": "^2.6.0"
+    "commander": "^2.6.0",
+    "usergrid": "^0.10.9"
+  },
+  "bin" : {
+      "abaasimport" : "./bin/abaasimport.js"
   }
 }
