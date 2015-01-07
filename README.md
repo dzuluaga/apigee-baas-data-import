@@ -34,4 +34,5 @@ $ abaasimport --help
     -l, --logging                          generate logging http transaction entries from usergrid client
     -O, --organization [organizationName]  Apigee BaaS Organization in which data will be imported
     -s, --secret [secret]                  Apigee BaaS Secret
+    -u, --uri [uri]                        Apigee BaaS URI including basepath
 ```
