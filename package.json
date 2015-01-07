@@ -1,6 +1,6 @@
 {
   "name": "apigee-baas-data-import",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This Node.js tool is meant to ease import of data to Apigee BaaS",
   "main": "index.js",
   "scripts": {
