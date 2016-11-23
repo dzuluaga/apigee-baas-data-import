@@ -1,5 +1,6 @@
 apigee-baas-data-import-DEPRECATED
-=======================
+=============================
+**This import tool has been deprecated as BAAS API supports importing arrays. See addendum.**
 
 This Node.js tool is meant to ease import of data into Apigee BaaS.
 
@@ -52,3 +53,37 @@ $ abaasimport --help
 
 #### Hot to convert Excel or CSV files into JSON quickly?
 in order to import data to BaaS required, it is required to conform with a valid JSON payload. You can leverage (Mr. Data Converter)[http://shancarter.github.io/mr-data-converter/] to tranform Excel into JSON.
+
+#### Addendum - Import collections directly
+```bash
+curl -X POST http://api.usergrid.com/{org_name}/{app_name}/{collection} -H 'Content-Type: application/json' --data @restaurants.json
+
+[
+  {
+    "restID": 1,
+    "name": "Pomegranate Cafe",
+    "address": "4025 E Chandler Blvd",
+    "city": "Phoenix",
+    "state": "AZ",
+    "location": {
+      "latitude": 33.3044612,
+      "longitude": -111.9945753
+    },
+    "phone": "+1-480-706-7472",
+    "category": "Coffee & Tea"
+  },
+  {
+    "restID": 2,
+    "name": "Los Taquitos",
+    "address": "4747 E Elliot Rd",
+    "city": "Phoenix",
+    "state": "AZ",
+    "location": {
+      "latitude": 33.3480616,
+      "longitude": -111.9820214
+    },
+    "phone": "+1-480-753-4370",
+    "category": "Mexican"
+  }
+]
+```
