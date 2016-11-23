@@ -1,4 +1,4 @@
-apigee-baas-data-import
+apigee-baas-data-import-DEPRECATED
 =======================
 
 This Node.js tool is meant to ease import of data into Apigee BaaS.
